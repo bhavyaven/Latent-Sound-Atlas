@@ -1,8 +1,3 @@
-# Latent-Sound-Atlas
-Scholarly Project with HONR 46400 - John Martinson Honors College at Purdue University 
-
-
-
 <a id="readme-top"></a>
 
 <!-- PROJECT LOGO -->
@@ -43,6 +38,8 @@ Scholarly Project with HONR 46400 - John Martinson Honors College at Purdue Univ
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+Scholarly Project with HONR 46400 - John Martinson Honors College at Purdue University 
 
 This project is an interactive audiovisual system that maps sound samples into a three-dimensional latent space and allows users to explore, select, and audition sounds spatially. The project combines audio feature analysis, clustering, OpenGL visualization, and real-time sound synthesis via SuperCollider. 
 
