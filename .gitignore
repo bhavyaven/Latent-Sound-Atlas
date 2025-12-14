@@ -1,0 +1,102 @@
+# =========================================================
+# Build outputs
+# =========================================================
+out/
+build/
+bin/
+Debug/
+Release/
+x64/
+x86/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+*.cmake
+compile_commands.json
+
+# =========================================================
+# Visual Studio / IDE files
+# =========================================================
+.vs/
+*.sln
+*.vcxproj*
+*.user
+*.filters
+*.opendb
+*.db
+*.pdb
+*.ilk
+
+# =========================================================
+# Executables & binaries
+# =========================================================
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+
+# =========================================================
+# Object files
+# =========================================================
+*.o
+*.obj
+*.lo
+*.la
+
+# =========================================================
+# Logs & temp files
+# =========================================================
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+
+# =========================================================
+# OS generated files
+# =========================================================
+.DS_Store
+Thumbs.db
+
+# =========================================================
+# Python cache (for clustering.py etc.)
+# =========================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env/
+
+# =========================================================
+# Audio / data intermediates (optional – adjust as needed)
+# =========================================================
+# Uncomment if these are GENERATED and not source data
+# prepared_data/
+# pca_results/
+# clustering_results/
+
+# =========================================================
+# SuperCollider artifacts
+# =========================================================
+*.scd~
+*.sc~
+sclang_history.txt
+
+# =========================================================
+# Keep important folders
+# =========================================================
+!src/
+!lib/
+!assets/
+!shaders/
+!sound_assets/
+!prepared_data/
+!pca_results/
+!clustering_results/
+!CMakeLists.txt
+!README.md
