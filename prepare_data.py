@@ -1,6 +1,5 @@
 """
-Latent Sound Atlas - Week 1, Task 1.3
-Data Preparation and Scaling Script
+Latent Sound Atlas - Data Preparation and Scaling Script
 
 This script loads the FluCoMa-generated features, cleans the data,
 and prepares scaled NumPy arrays for dimensionality reduction.
@@ -133,7 +132,7 @@ def clean_data(df):
     else:
         print("✓ No zero-variance features")
     
-    # Check for highly correlated features (optional filtering)
+    # Check for highly correlated features
     correlation_matrix = features.corr().abs()
     upper_triangle = correlation_matrix.where(
         np.triu(np.ones(correlation_matrix.shape), k=1).astype(bool)
@@ -331,7 +330,6 @@ def main():
     print(f"  - metadata.json: {len(metadata)} samples")
     print(f"  - scaler.pkl: {SCALING_METHOD} scaler")
     print(f"  - Visualizations: 2 PNG files")
-    print("\nReady for dimensionality reduction (Week 2)!")
 
 # ============================================================================
 # UTILITY FUNCTIONS

@@ -1,6 +1,5 @@
 """
-Latent Sound Atlas - Week 1, Task 1.2
-Feature Extraction using Librosa (FluCoMa Alternative)
+Latent Sound Atlas - Feature Extraction using Librosa (FluCoMa Alternative)
 
 This script processes 150 audio files and extracts acoustic features using librosa.
 Features extracted:
@@ -268,9 +267,6 @@ def main():
     print("\nFirst few features:")
     for col in feature_cols[:5]:
         print(f"  {col}: mean={df[col].mean():.4f}, std={df[col].std():.4f}")
-    
-    print(f"\n✓ Ready for Task 1.3: Data Preparation")
-    print("   Run: python prepare_data.py")
 
 if __name__ == "__main__":
     main()

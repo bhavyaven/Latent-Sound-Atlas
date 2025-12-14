@@ -1,6 +1,5 @@
 """
-Latent Sound Atlas - Week 2, Task 2.2
-K-Means Clustering
+Latent Sound Atlas - K-Means Clustering
 
 This script applies K-Means clustering to the 3D PCA coordinates
 to group similar sounds together. These clusters will be color-coded
@@ -360,21 +359,12 @@ def main():
     print("LATENT SOUND ATLAS - K-MEANS CLUSTERING")
     print("="*60)
     
-    # 1. Load data
     coordinates, metadata = load_pca_data()
     
-    # 2. Find optimal clusters (optional - comment out if you want to skip)
-    # optimal_n, optimization_results = find_optimal_clusters(coordinates, max_clusters=20)
-    # print(f"\nRecommended: {optimal_n} clusters")
-    # print(f"Using configured: {N_CLUSTERS} clusters")
-    
-    # 3. Apply K-Means
     cluster_labels, kmeans, analysis = apply_kmeans(coordinates, n_clusters=N_CLUSTERS)
-    
-    # 4. Visualize
+
     visualize_clusters(coordinates, cluster_labels, metadata, OUTPUT_DIR)
-    
-    # 5. Save results
+
     save_clustering_results(cluster_labels, kmeans, analysis, OUTPUT_DIR)
     
     print("\n" + "="*60)
@@ -385,8 +375,6 @@ def main():
     print(f"  - Number of clusters: {N_CLUSTERS}")
     print(f"  - Silhouette score: {analysis['silhouette_score']:.4f}")
     print(f"  - Visualizations: 4 PNG files")
-    print("\n✓ Ready for Task 2.3: Data Export")
-    print("   Run: python export_for_opengl.py")
 
 if __name__ == "__main__":
     main()

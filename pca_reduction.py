@@ -1,6 +1,5 @@
 """
-Latent Sound Atlas - Week 2, Task 2.1
-PCA Dimensionality Reduction
+Latent Sound Atlas - PCA Dimensionality Reduction
 
 This script applies PCA to reduce the 47-dimensional feature space
 to 3D coordinates (X, Y, Z) for visualization.
@@ -345,8 +344,6 @@ def main():
     print(f"  - 3D coordinates: {coordinates_3d.shape}")
     print(f"  - Variance explained: {analysis['total_variance_explained']*100:.2f}%")
     print(f"  - Visualizations: 4 PNG files")
-    print("\n✓ Ready for Task 2.2: Clustering")
-    print("   Run: python clustering.py")
 
 if __name__ == "__main__":
     main()

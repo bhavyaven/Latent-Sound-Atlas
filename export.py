@@ -1,6 +1,5 @@
 """
-Latent Sound Atlas - Week 2, Task 2.3
-Data Export for OpenGL/3D Visualization
+Latent Sound Atlas - Data Export for OpenGL/3D Visualization
 
 This script combines PCA coordinates, cluster assignments, and metadata
 into formats optimized for 3D rendering (JSON, CSV).
@@ -372,12 +371,6 @@ def main():
     print(f"  - sound_map_data.csv (human-readable)")
     print(f"  - cluster_colors.json (color palette)")
     print(f"  - cluster_statistics.json (cluster info)")
-    print("\n✓ Week 2 Complete! Ready for OpenGL visualization (Week 3-4)")
-    print("\nNext Steps:")
-    print("  1. Load sound_map_data.json in your OpenGL/web application")
-    print("  2. Render points at (x, y, z) coordinates")
-    print("  3. Color points by cluster_id using cluster_colors")
-    print("  4. Implement interaction to trigger sounds via OSC")
 
 if __name__ == "__main__":
     main()
