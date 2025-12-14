@@ -1,0 +1,42 @@
+{
+  "n_samples": 150,
+  "n_features": 46,
+  "scaling_method": "standard",
+  "feature_statistics": {
+    "mean": 3.2437820545569794e-17,
+    "std": 1.0,
+    "min": -2.6292313949927215,
+    "max": 7.839754532757508
+  },
+  "category_distribution": {
+    "mus": 78,
+    "fx": 30,
+    "amb": 24,
+    "sfx": 18
+  },
+  "synth_distribution": {
+    "ocarina": 27,
+    "flute": 18,
+    "harp": 18,
+    "chime": 15,
+    "sparkle": 15,
+    "pad": 15,
+    "brook": 6,
+    "fire": 6,
+    "leaves": 6,
+    "rain": 6,
+    "bird": 6,
+    "owl": 6,
+    "whoosh": 6
+  },
+  "mood_distribution": {
+    "cozy": 50,
+    "mystic": 50,
+    "tense": 50
+  },
+  "type_distribution": {
+    "single": 75,
+    "texture": 57,
+    "melody": 18
+  }
+}

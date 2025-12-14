@@ -1,0 +1,26 @@
+# ninja log v6
+160	2624	7869579275693949	src/CMakeFiles/glfw.dir/platform.c.obj	b546137b6dbdf4bd
+267	3049	7869579276772223	src/CMakeFiles/glfw.dir/osmesa_context.c.obj	ccaa6b054eedcf4d
+187	3155	7869579276008594	src/CMakeFiles/glfw.dir/vulkan.c.obj	5086e56eb1285aef
+68	3306	7869579274791283	src/CMakeFiles/glfw.dir/init.c.obj	12e865c9259cc416
+127	3427	7869579275364119	src/CMakeFiles/glfw.dir/monitor.c.obj	cbba0c29fe031fba
+216	3522	7869579276268895	src/CMakeFiles/glfw.dir/window.c.obj	7d384f8c6c9e766c
+243	3602	7869579276533949	src/CMakeFiles/glfw.dir/egl_context.c.obj	b7cd8d53c6d6c650
+38	3730	7869579274496064	src/CMakeFiles/glfw.dir/context.c.obj	92ac5fa815fc0ddc
+97	4317	7869579275080188	src/CMakeFiles/glfw.dir/input.c.obj	990829d0cf5295db
+3050	5628	7869579304614391	src/CMakeFiles/glfw.dir/null_monitor.c.obj	2465d32ad121f70b
+3436	5691	7869579308463888	src/CMakeFiles/glfw.dir/win32_module.c.obj	82d5dba784cd4cb3
+3525	5742	7869579309347054	src/CMakeFiles/glfw.dir/win32_time.c.obj	391b76a92a496c61
+3325	5791	7869579307360191	src/CMakeFiles/glfw.dir/null_joystick.c.obj	58f0a639f0c0db30
+2637	5844	7869579300473843	src/CMakeFiles/glfw.dir/null_init.c.obj	ff0a27939d2c8711
+3158	5861	7869579305692914	src/CMakeFiles/glfw.dir/null_window.c.obj	75a0f2a0375e1518
+3605	6162	7869579310144963	src/CMakeFiles/glfw.dir/win32_thread.c.obj	25323482bc56e3b2
+5792	6342	7869579332023269	src/CMakeFiles/glfw.dir/glfw.rc.res	4e1286f3054d886
+3732	6476	7869579311428305	src/CMakeFiles/glfw.dir/win32_init.c.obj	f597548c7d8a9e1d
+4318	7307	7869579317301878	src/CMakeFiles/glfw.dir/win32_joystick.c.obj	d2e4d834af99541d
+5630	7476	7869579330401482	src/CMakeFiles/glfw.dir/win32_monitor.c.obj	fdd51a260fc2980d
+5743	7667	7869579331527196	src/CMakeFiles/glfw.dir/wgl_context.c.obj	af875ccf6b1ae5f5
+5693	7813	7869579331021335	src/CMakeFiles/glfw.dir/win32_window.c.obj	a7d19acc8fd80bad
+7814	8673	7869579359569991	src/glfw3.dll	9212e249ecfa704e
+7814	8673	7869579359569991	src/glfw3dll.lib	9212e249ecfa704e
+8675	9413	7869579360861785	CMakeFiles/install.util	1bec4f619f8f94bb

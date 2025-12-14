@@ -17,6 +17,22 @@ install_manifest.txt
 *.cmake
 compile_commands.json
 
+# ===============================
+# Vendor libraries (keep source, ignore binaries)
+# ===============================
+lib/**/bin/
+lib/**/lib/
+lib/**/build/
+lib/**/Debug/
+lib/**/Release/
+
+# ===============================
+# Audio temp files
+# ===============================
+*.wav~
+*.aif~
+*.aiff~
+
 # =========================================================
 # Visual Studio / IDE files
 # =========================================================
