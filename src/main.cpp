@@ -106,12 +106,22 @@ int main() {
     }
     std::cout << "✓ Loaded " << dataLoader.getSoundPoints().size() << " sound points\n";
 
-    // Initialize camera
+    // Calculate center of all points
+    glm::vec3 center(0.0f);
+    const auto& points = dataLoader.getSoundPoints();
+    for (const auto& p : points) {
+        center += p.position;
+    }
+    center /= points.size();
+
+    std::cout << "Points center: " << center.x << ", " << center.y << ", " << center.z << "\n";
+
+    // Initialize camera looking at the center
     camera = std::make_unique<Camera>(
-        glm::vec3(0.0f, 0.0f, 150.0f),  // Start far back
-        glm::vec3(0.0f, 1.0f, 0.0f),    // Up vector
-        -90.0f,                          // Look forward
-        0.0f                             // Level pitch
+        center + glm::vec3(0.0f, 0.0f, 100.0f),  // Position camera 100 units behind center
+        glm::vec3(0.0f, 1.0f, 0.0f),             // Up vector
+        -90.0f,                                   // Yaw: look forward
+        0.0f                                      // Pitch: level
     );
 
     // Initialize renderer

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\oscmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\dataloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\particlesystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\lib\glad\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\stb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\oscmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\src\particlesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{11C29B70-3418-3182-A5A0-6DFC4A98090F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A8865E98-4D39-3CE0-8D16-27AA943C1FBA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

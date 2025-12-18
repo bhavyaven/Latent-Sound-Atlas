@@ -33,7 +33,6 @@ bool Renderer::initialize(const std::vector<SoundPoint>& points,
     particleShader = std::make_unique<Shader>("shaders/particle-v.glsl", "shaders/particle-f.glsl");
 
     setupBuffers();
-    setupCloudParticles(); 
 
     std::cout << "Renderer initialized with " << soundPoints.size() << " sound points\n";
     return true;
@@ -142,7 +141,7 @@ void Renderer::setupBuffers() {
         pointData.push_back(p.color.r);
         pointData.push_back(p.color.g);
         pointData.push_back(p.color.b);
-        pointData.push_back(15.0f); // Larger for visibility
+        pointData.push_back(1.0f);
     }
 
     glGenVertexArrays(1, &pointVAO);
@@ -183,8 +182,7 @@ void Renderer::setupBuffers() {
 }
 
 void Renderer::render(const glm::mat4& view, const glm::mat4& projection, float time) {
-    renderBackground(view, projection);
-    renderCloudParticles(view, projection, time); 
+    renderBackground(view, projection); 
     renderPoints(view, projection, time);
 }
 
@@ -222,7 +220,8 @@ void Renderer::renderPoints(const glm::mat4& view,
     const glm::mat4& projection,
     float time) {
     glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE); // Additive for intense glow
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); 
+    glEnable(GL_PROGRAM_POINT_SIZE);
 
     pointShader->use();
     pointShader->setMat4("view", view);
@@ -234,12 +233,11 @@ void Renderer::renderPoints(const glm::mat4& view,
     for (size_t i = 0; i < soundPoints.size(); i++) {
         bool isSelected = (selectedPointIndex == (int)i);
         pointShader->setBool("isSelected", isSelected);
-        pointShader->setFloat("glowIntensity", isSelected ? 5.0f : 1.5f); // Much stronger
+        pointShader->setFloat("glowIntensity", isSelected ? 2.0f : 1.0f);
         glDrawArrays(GL_POINTS, i, 1);
     }
 
     glBindVertexArray(0);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
 
 int Renderer::selectPoint(float ndcX, float ndcY,
@@ -256,7 +254,7 @@ int Renderer::selectPoint(float ndcX, float ndcY,
 
     float minDist = FLT_MAX;
     int closest = -1;
-    float radius = 8.0f; // Larger selection radius
+    float radius = 2.0f;
 
     for (size_t i = 0; i < soundPoints.size(); i++) {
         glm::vec3 diff = soundPoints[i].position - cameraPos;
@@ -286,6 +284,4 @@ void Renderer::cleanup() {
     if (pointVBO) glDeleteBuffers(1, &pointVBO);
     if (backgroundVAO) glDeleteVertexArrays(1, &backgroundVAO);
     if (backgroundVBO) glDeleteBuffers(1, &backgroundVBO);
-    if (cloudVAO) glDeleteVertexArrays(1, &cloudVAO);
-    if (cloudVBO) glDeleteBuffers(1, &cloudVBO);
 }

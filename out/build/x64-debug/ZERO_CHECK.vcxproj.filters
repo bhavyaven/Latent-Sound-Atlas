@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bhavy\honr 464\scholarly project\Latent-Sound-Atlas\out\build\x64-debug\CMakeFiles\21cde361b74c803490aec50643dd8160\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DF182E98-0E25-32EF-BEB8-148AC2299D26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
