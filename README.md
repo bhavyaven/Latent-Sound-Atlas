@@ -149,7 +149,7 @@ SuperCollider must be running and listening for OSC messages before launching th
 * Fantasy video game ambience/aesthetics
 
 ### Result:
-![alt text](<\assets\Screenshot 2025-12-14 215618.png>)
+![alt text](</assets/Screenshot 2025-12-14 215618.png>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
